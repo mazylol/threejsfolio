@@ -17,7 +17,7 @@ camera.position.setX(-3);
 renderer.render(scene, camera);
 
 const geometry = new THREE.TorusGeometry(10, 3, 16, 100);
-const material = new THREE.MeshStandardMaterial({ color: 0x4bfeaa });
+const material = new THREE.MeshStandardMaterial({ color: 0x150236 });
 const torus = new THREE.Mesh(geometry, material);
 
 scene.add(torus);
@@ -42,7 +42,7 @@ function addStar() {
 
 Array(200).fill().forEach(addStar);
 
-const spaceTexture = new THREE.TextureLoader().load('/space.jpg');
+const spaceTexture = new THREE.TextureLoader().load('/background.png');
 scene.background = spaceTexture;
 
 const mazyTexture = new THREE.TextureLoader().load('/mazy.jpg');
@@ -51,7 +51,7 @@ const mazy = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicM
 
 scene.add(mazy);
 
-const moonTexture = new THREE.TextureLoader().load('/moon.jpg');
+const moonTexture = new THREE.TextureLoader().load('/ball.jpg');
 const normalTexture = new THREE.TextureLoader().load('/normal.jpg');
 
 const moon = new THREE.Mesh(
