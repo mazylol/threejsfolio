@@ -42,17 +42,17 @@ function addStar() {
 
 Array(200).fill().forEach(addStar);
 
-const spaceTexture = new THREE.TextureLoader().load('/background.png');
+const spaceTexture = new THREE.TextureLoader().load('/site/background.png');
 scene.background = spaceTexture;
 
-const mazyTexture = new THREE.TextureLoader().load('/mazy.jpg');
+const mazyTexture = new THREE.TextureLoader().load('/site/mazy.jpg');
 
 const mazy = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: mazyTexture }));
 
 scene.add(mazy);
 
-const moonTexture = new THREE.TextureLoader().load('/ball.jpg');
-const normalTexture = new THREE.TextureLoader().load('/normal.jpg');
+const moonTexture = new THREE.TextureLoader().load('/site/ball.jpg');
+const normalTexture = new THREE.TextureLoader().load('/site/normal.jpg');
 
 const moon = new THREE.Mesh(
  new THREE.SphereGeometry(3, 32, 32),
