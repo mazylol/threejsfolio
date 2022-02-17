@@ -79,9 +79,9 @@ function moveCamera() {
  mazy.rotation.y += 0.01;
  mazy.rotation.z += 0.01;
 
- camera.position.z = t * -0.01;
- camera.position.x = t * -0.0002;
- camera.rotation.y = t * -0.0002;
+ camera.position.z = t * -0.0075;
+ camera.position.x = t * -0.00015;
+ camera.rotation.y = t * -0.00015;
 }
 
 document.body.onscroll = moveCamera;
